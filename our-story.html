@@ -1,576 +1,938 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Our Story Mimice Medici apartments | Best apartments Mimice Medici Lucica</title>
-    <meta name="description" content="Apartment Lucica is located in mimice small place on adriatic coast where sea is crystal clear and where you can feel breath of untouched nature. We have apartments for rent that are ideal for you and beach is in front of the house">
-    <meta name="keywords" content="apartments, cheap-apartments, place for relax, apartments for rent, get a discount, crystal clear sea, rent a apartment, trips and activites in croatia, medici, mimice, split">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>
+      Our Story Mimice Medici apartments | Best apartments Mimice Medici Lucica
+    </title>
+    <meta
+      name="description"
+      content="Apartment Lucica is located in mimice small place on adriatic coast where sea is crystal clear and where you can feel breath of untouched nature. We have apartments for rent that are ideal for you and beach is in front of the house"
+    />
+    <meta
+      name="keywords"
+      content="apartments, cheap-apartments, place for relax, apartments for rent, get a discount, crystal clear sea, rent a apartment, trips and activites in croatia, medici, mimice, split"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
 
-    <link rel="stylesheet" href="assets/css/app.css">
-</head>
-
-<body>
+  <body>
     <div class="loader"></div>
 
     <div id="overlay">
-        <div id="loading-items">
-            <a href="#" class="logo-loading">
-      <img src="assets/img/lucica-white-logo.webp"/>
-    </a>
-            <h5 id="progstat"></h5>
-        </div>
+      <div id="loading-items">
+        <a href="#" class="logo-loading">
+          <img src="assets/img/lucica-white-logo.webp" />
+        </a>
+        <h5 id="progstat"></h5>
+      </div>
     </div>
     <div id="content-overlay"></div>
     <div id="progress-overlay"></div>
 
     <div class="navbar-header" id="mainNav">
-        <div class="navbar-header-toggle">
-            <div class="navbar-btn">
-                <div class="navbar-btn-bars">
-                    <div></div>
-                    <div>
-                    </div>
-                    <div></div>
-                </div>
-                <div class="navbar-btn-label">
-                    <span class="navbar-btn-label-menu">Menu</span>
-                </div>
-            </div>
+      <div class="navbar-header-toggle">
+        <div class="navbar-btn">
+          <div class="navbar-btn-bars">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="navbar-btn-label">
+            <span class="navbar-btn-label-menu">Menu</span>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="navbar-header reservation" id="bookNow">
-        <div class="navbar-header-toggle">
-            <div class="navbar-btn">
-                <div class="navbar-btn-bars">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="navbar-btn-label">
-                    <span class="navbar-btn-label-menu">Book Now</span>
-                </div>
-            </div>
+      <div class="navbar-header-toggle">
+        <div class="navbar-btn">
+          <div class="navbar-btn-bars">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="navbar-btn-label">
+            <span class="navbar-btn-label-menu">Book Now</span>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="navbar-header close" id="closePop">
-        <div class="navbar-header-toggle">
-            <div class="navbar-btn">
-                <div class="navbar-btn-bars">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="navbar-btn-label">
-                    <span class="navbar-btn-label-menu">Close</span>
-                </div>
-            </div>
+      <div class="navbar-header-toggle">
+        <div class="navbar-btn">
+          <div class="navbar-btn-bars">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="navbar-btn-label">
+            <span class="navbar-btn-label-menu">Close</span>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <div class="navbar-header-mobile" id="navMobile">
-        <a href="index.html" class="logo">
-		<img src="assets/img/lucica-white-logo.webp" alt="">
-	</a>
-        <div class="navbar-btn-bars" id="navMobileBtn">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+      <a href="index.html" class="logo">
+        <img src="assets/img/lucica-white-logo.webp" alt="" />
+      </a>
+      <div class="navbar-btn-bars" id="navMobileBtn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
     <div id="navOverlay"></div>
 
     <div id="navContent">
-
-        <div class="q-container container-inner">
-
-            <div id="menu_screen">
-                <div class="screen_item" style="background-image:url('assets/img/nav/0-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/1-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/2-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/3-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/4-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/5-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/6-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/7-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/8-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/9-min.webp')"></div>
-                <div class="screen_item" style="background-image:url('assets/img/nav/10-min.webp')"></div>
-            </div>
-
-            <div class="columns">
-                <div class="column">
-                    <ul class="main_nav">
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="index.html">Home</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="our-story.html">Our Story</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="trip-activites.html">Trips &amp; Activites</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="gallery.html">Gallery</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="book-now.html">Book now</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="important-information.html">Important information</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="contact.html">Location &amp; Contact</a></li>
-				    </ul>
-			     </div>
-			     <div class="column">
-				<h5>Languages</h5>
-				    <ul class="main_nav">
-					    <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="nasa-prica.html">Croatian</a></span></span>
-                        </li>
-                        <li><span class="q_split"><span class="q_split_wrap rev_item"><a href="our-story.html">English</a></span></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="q-container container-inner">
+        <div id="menu_screen">
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/0-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/1-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/2-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/3-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/4-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/5-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/6-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/7-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/8-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="background-image: url('assets/img/nav/9-min.webp')"
+          ></div>
+          <div
+            class="screen_item"
+            style="
+              background-image: url('assets/img/nav/10-min.webp');
+            "
+          ></div>
         </div>
 
+        <div class="columns">
+          <div class="column">
+            <ul class="main_nav">
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="index.html">Home</a></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="our-story.html">Our Story</a></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="trip-activites.html"
+                      >Trips &amp; Activites</a
+                    ></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="gallery.html">Gallery</a></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="book-now.html">Book now</a></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="important-information.html"
+                      >Important information</a
+                    ></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="contact.html">Location &amp; Contact</a></span
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h5>Languages</h5>
+            <ul class="main_nav">
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="nasa-prica.html">Croatian</a></span
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="q_split"
+                  ><span class="q_split_wrap rev_item"
+                    ><a href="our-story.html">English</a></span
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="mainContent" class="q_smooth">
-
-        <header id="header" class="header">
-            <div class="q-container">
-                <div class="columns">
-                    <div class="column logo-wrap">
-                        <a href="index.html" class="logo">
-					<img src="assets/img/lucica-white-logo.webp" alt="">
-				</a>
-                    </div>
-                </div>
+      <header id="header" class="header">
+        <div class="q-container">
+          <div class="columns">
+            <div class="column logo-wrap">
+              <a href="index.html" class="logo">
+                <img src="assets/img/lucica-white-logo.webp" alt="" />
+              </a>
             </div>
-        </header>
-
-
-        <div class="vs-div">
-
-
-            <section id="page-top-banner" class="pages-top-banner">
-                <div class="entry">
-                    <h1 class="q_splitText">Our&nbsp;Story</h1>
-                    <p>Crystal clear sea, peeble beach and terraces with sea view</p>
-                    <div class="link">
-                        <a href="#" class="q_magnet inline-link q_scroll">Spusti za više</a>
-                    </div>
-                </div>
-                <div class="single-bg">
-                    <div class="overlay"></div>
-                    <div class="bg vs-div" data-speed="-.3" style="background-image: url('assets/img/our-story/our-story-header-min.webp');"></div>
-                </div>
-            </section>
-            <section id="page_summary" class="section our-story-summary bg-image-section-one">
-                <div class="q-container container-inner">
-                    <div class="columns type-1">
-                        <div class="column">
-                            <p class="">
-                                Pines, mediterranean fragrant herbs, lemons, olives and flowers decorate our house and parking in front. Terraces with sea view in front of house guests can use for romantic and magical evenings and to enjoy in the sound of the sea under the light of a thousand stars.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section janata-timeline bg-vanilla">
-                <div class="q-container container-inner">
-
-                    <div class="columns timeline-item block-card-shadow timeline-right reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h2 class="year vs-div" data-speed="-0.2">
-                                    <span class="q_splitText">1965</span>
-                                </h2>
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">The</span></span>
-                                    <span class="q_split text-green"><span class="q_split_wrap rev_item">Beginning.</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    Lorem ipsum is smply dummy text to typesetting industry.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/timeline-1-min.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-                    <div class="columns timeline-item block-card-shadow timeline-left reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h2 class="year vs-div" data-speed="-0.2">
-                                    <span class="q_splitText">2015</span>
-                                </h2>
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">The</span></span>
-                                    <span class="q_split text-green"><span class="q_split_wrap rev_item">Peeble beach</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    Gravel beaches are 20 meters away from the house and they are ideal for families with Djeca because of the short shallow area at the entrance to the sea
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/timeline-2-min.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-
-                    <div class="columns timeline-item block-card-shadow timeline-right reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h2 class="year vs-div" data-speed="-0.2">
-                                    <span class="q_splitText">2023</span>
-                                </h2>
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">Sea</span></span>
-                                    <span class="q_split"><span class="q_split_wrap rev_item">like medicine</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    Being near the sea side is good for your health and body. Clean sea air helps you with breathing and has positive effects to people. Swimming in sea water can benefit your skin and sea water is great for body detox.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/gastro.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-
-                    <div class="columns timeline-item block-card-shadow timeline-right reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">Gastro</span></span>
-                                    <span class="q_split text-green"><span class="q_split_wrap rev_item">evenings</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    Once in a week local chefs, apartment owners are preparing traditional food with local groceries that is famous for this area. Guest can try on of the most famous Dalmatian meals with best seafood recipe - brudet, squit, etc.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/vatromet.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-                    <div class="columns timeline-item block-card-shadow timeline-left reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">Night of fisherman</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    A traditional fisherman's evening is held last week in August, local people with they guests are making preparation for parangale for fishermen. After preparation fishermen are gone fishing. The next morning, the parangal is taken and the fish catch is prepared by local chefs. Lunch can be eaten about 1 p.m. We have prizes for the richest catch and for the biggest fish. Winner's announcement is in the evening with a traditional Capella song and fireworks. The party lasts until late in the night.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/gusarske-noci.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-                    <div class="columns timeline-item block-card-shadow timeline-right reveal">
-                        <div class="column block-entry">
-                            <div class="inner">
-                                <h1 class="title">
-                                    <span class="q_split"><span class="q_split_wrap rev_item">Pirate</span></span>
-                                    <span class="q_split"><span class="q_split_wrap rev_item">night</span></span>
-                                </h1>
-
-                                <div class="title-line"></div>
-                                <p class="rev_item">
-                                    The pirate night is held at the beginning of the August. Pirates in pirate galleys come to Medići's bay in pirate uniforms. After attacking and defending the site with the galleys in Mimice, anchors are attacking the place they are defending. The procession goes with a mimic harbor with an occasional play. Spektakl in the place served with pirate cocktails is prepared for fish dishes of our region. The guests are socializing with pirates, singing, dancing late into the night.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column block-picture">
-                            <figure class="picture">
-                                <div class="box vs-div" data-speed="-0.1"></div>
-                                <div class="rev_clip">
-                                    <img src="assets/img/our-story/timeline-3-min.webp" alt="" class="vs-div clip_image" data-speed="-0.15">
-                                </div>
-                            </figure>
-                            <div class="timeline-lines"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-
-
-
+          </div>
         </div>
-        <section id="reservation" class="section block-card-section block-card-overlap bg-full-image vs-div">
-            <div style="background-image:url('assets/img/homepage/bg-reservation-min.webp')" alt="" class="bg-image vs-div" data-speed="-.3"></div>
-            <div class="q-container container-inner">
-                <div class="columns block-card">
-                    <div class="column hide-mobile">&nbsp;</div>
-                    <div class="column is-7">
+      </header>
 
-                        <div class="columns block-reservation">
-                            <form onsubmit="fServePush(); return false;" class="column reservation-wrap">
-                                <div class="columns calendar-custom calendar-container">
-                                    <div class="column button-check checkin">
-                                        <input type="text" id="checkin" autocomplete="off" class="checkin"
-                                               placeholder="CHECK IN" onkeydown="return false;" required>
-                                        <i class="icon icon-dots-menu"></i>
-                                    </div>
-                                    <div class="column button-check checkout">
-                                        <input type="text" id="checkout" autocomplete="off" class="checkout"
-                                               placeholder="CHECK OUT" onkeydown="return false;" required>
-                                        <i class="icon icon-dots-menu"></i>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Name*</label>
-                                        <div class="qty remove-spacing">
-                                            <input id="name" placeholder="NAME*" class="w-full form-text-input" required>
-                                        </div>
-                                    </div>
-                                    <div class="column button-qty">
-                                        <label>Email*</label>
-                                        <div class="qty remove-spacing">
-                                            <input id="email" placeholder="EMAIL*" class="w-full form-text-input" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Choose apartment</label>
-                                        <div class="qty choose">
-                                            <select name="choose_apartment" id="choose_apartment" required>
-                                                <option value="" disabled selected>Choose apartment</option>
-                                                <option value="Apartment Studio 2">Apartment Studio 2</option>
-                                                <option value="Apartment Studio 2+1">Apartment Studio 2+1</option>
-                                                <option value="Apartment 2+2">Apartment 2+2</option>
-                                                <option value="Apartment 4+2">Apartment 4+2</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Adult(s)</label>
-                                        <div class="qty">
-                                            <i class="icon icon-minus" onclick="increment(-1, 'increment_adult')"></i>
-                                            <input disabled id="increment_adult" value="2">
-                                            <i class="icon icon-plus" onclick="increment(1, 'increment_adult')"></i>
-                                        </div>
-                                    </div>
-                                    <div class="column button-qty">
-                                        <label>Children</label>
-                                        <div class="qty">
-                                            <i class="icon icon-minus" onclick="increment(-1, 'increment_child')"></i>
-                                            <input disabled id="increment_child" value="0">
-                                            <i class="icon icon-plus" onclick="increment(1, 'increment_child')"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Message</label>
-                                        <div class="qty remove-spacing">
-                                        <textarea rows="3" id="message" class="w-full form-text-input"
-                                                  style="width: -webkit-fill-available;" placeholder="Message"
-                                                  required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns button-text">
-                                    <div class="column button-wrap q_magnet">
-                                        <button type="submit" class="reset-button-styling button bg-green">Send
-                                            inquiry
-                                        </button>
-                                    </div>
-                                    <div class="column button-wrap">
-                                        <a href="apartment-lucica-pricelist.pdf" class=" inline-link q_magnet">Download our
-                                            pricelist</a>
-                                    </div>
-                                </div>
-                            </form>
-                            >
-                    </div>
-
-                </div>
+      <div class="vs-div">
+        <section id="page-top-banner" class="pages-top-banner">
+          <div class="entry">
+            <h1 class="q_splitText">Our&nbsp;Story</h1>
+            <p>Crystal clear sea, peeble beach and terraces with sea view</p>
+            <div class="link">
+              <a href="#" class="q_magnet inline-link q_scroll"
+                >Spusti za više</a
+              >
             </div>
-    </div>
-    </section>
+          </div>
+          <div class="single-bg">
+            <div class="overlay"></div>
+            <div
+              class="bg vs-div"
+              data-speed="-.3"
+              style="
+                background-image: url('assets/img/our-story/our-story-header-min.webp');
+              "
+            ></div>
+          </div>
+        </section>
+        <section
+          id="page_summary"
+          class="section our-story-summary bg-image-section-one"
+        >
+          <div class="q-container container-inner">
+            <div class="columns type-1">
+              <div class="column">
+                <p class="">
+                  Pines, mediterranean fragrant herbs, lemons, olives and
+                  flowers decorate our house and parking in front. Terraces with
+                  sea view in front of house guests can use for romantic and
+                  magical evenings and to enjoy in the sound of the sea under
+                  the light of a thousand stars.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <footer id="footer" class="section footer">
+        <section class="section janata-timeline bg-vanilla">
+          <div class="q-container container-inner">
+            <div
+              class="columns timeline-item block-card-shadow timeline-right reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h2 class="year vs-div" data-speed="-0.2">
+                    <span class="q_splitText">1965</span>
+                  </h2>
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">The</span></span
+                    >
+                    <span class="q_split text-green"
+                      ><span class="q_split_wrap rev_item"
+                        >Beginning.</span
+                      ></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    Lorem ipsum is smply dummy text to typesetting industry.
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/timeline-1-min.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+            <div
+              class="columns timeline-item block-card-shadow timeline-left reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h2 class="year vs-div" data-speed="-0.2">
+                    <span class="q_splitText">2015</span>
+                  </h2>
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">The</span></span
+                    >
+                    <span class="q_split text-green"
+                      ><span class="q_split_wrap rev_item"
+                        >Peeble beach</span
+                      ></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    Gravel beaches are 20 meters away from the house and they
+                    are ideal for families with Djeca because of the short
+                    shallow area at the entrance to the sea
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/timeline-2-min.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+
+            <div
+              class="columns timeline-item block-card-shadow timeline-right reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h2 class="year vs-div" data-speed="-0.2">
+                    <span class="q_splitText">2023</span>
+                  </h2>
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">Sea</span></span
+                    >
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item"
+                        >like medicine</span
+                      ></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    Being near the sea side is good for your health and body.
+                    Clean sea air helps you with breathing and has positive
+                    effects to people. Swimming in sea water can benefit your
+                    skin and sea water is great for body detox.
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/gastro.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+
+            <div
+              class="columns timeline-item block-card-shadow timeline-right reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">Gastro</span></span
+                    >
+                    <span class="q_split text-green"
+                      ><span class="q_split_wrap rev_item">evenings</span></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    Once in a week local chefs, apartment owners are preparing
+                    traditional food with local groceries that is famous for
+                    this area. Guest can try on of the most famous Dalmatian
+                    meals with best seafood recipe - brudet, squit, etc.
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/vatromet.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+            <div
+              class="columns timeline-item block-card-shadow timeline-left reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item"
+                        >Night of fisherman</span
+                      ></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    A traditional fisherman's evening is held last week in
+                    August, local people with they guests are making preparation
+                    for parangale for fishermen. After preparation fishermen are
+                    gone fishing. The next morning, the parangal is taken and
+                    the fish catch is prepared by local chefs. Lunch can be
+                    eaten about 1 p.m. We have prizes for the richest catch and
+                    for the biggest fish. Winner's announcement is in the
+                    evening with a traditional Capella song and fireworks. The
+                    party lasts until late in the night.
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/gusarske-noci.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+            <div
+              class="columns timeline-item block-card-shadow timeline-right reveal"
+            >
+              <div class="column block-entry">
+                <div class="inner">
+                  <h1 class="title">
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">Pirate</span></span
+                    >
+                    <span class="q_split"
+                      ><span class="q_split_wrap rev_item">night</span></span
+                    >
+                  </h1>
+
+                  <div class="title-line"></div>
+                  <p class="rev_item">
+                    The pirate night is held at the beginning of the August.
+                    Pirates in pirate galleys come to Medići's bay in pirate
+                    uniforms. After attacking and defending the site with the
+                    galleys in Mimice, anchors are attacking the place they are
+                    defending. The procession goes with a mimic harbor with an
+                    occasional play. Spektakl in the place served with pirate
+                    cocktails is prepared for fish dishes of our region. The
+                    guests are socializing with pirates, singing, dancing late
+                    into the night.
+                  </p>
+                </div>
+              </div>
+              <div class="column block-picture">
+                <figure class="picture">
+                  <div class="box vs-div" data-speed="-0.1"></div>
+                  <div class="rev_clip">
+                    <img
+                      src="assets/img/our-story/timeline-3-min.webp"
+                      alt=""
+                      class="vs-div clip_image"
+                      data-speed="-0.15"
+                    />
+                  </div>
+                </figure>
+                <div class="timeline-lines"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section
+        id="reservation"
+        class="section block-card-section block-card-overlap bg-full-image vs-div"
+      >
+        <div
+          style="
+            background-image: url('assets/img/homepage/bg-reservation-min.webp');
+          "
+          alt=""
+          class="bg-image vs-div"
+          data-speed="-.3"
+        ></div>
         <div class="q-container container-inner">
-            <div class="columns">
-                <div class="column q-2-3-desktop column-left">
-                    <div class="inner">
-                        <div class="top">
-                            <p class="time"><span id="time__"></span><span id="time__format"></span></p>
-                            <p class="temperature"><span class="cc"></span>°C</p>
-                        </div>
-                        <div class="bottom">
-                            <nav class="social-network">
-                                <ul>
-                                    <li><a href="https://web.facebook.com/apartmani.lucica/" target="_blank"><i class="icon icon-facebook"></i></a></li>
-                                    <li><a href="https://www.instagram.com/apartmani_lucica_medici/" target="_blank"><i class="icon icon-instagram"></i></a></li>
-                                    <li><a href="https://www.tripadvisor.com/Hotel_Review-g1943769-d15243139-Reviews-Apartmani_Lucica-Mimice_Split_Dalmatia_County_Dalmatia.html" target="_blank"><i class="icon icon-tripadvisor"></i></a></li>
-                                </ul>
-                            </nav>
-                            <p class="copyright">
-                                <span>&copy; <label id="year_copy">2023</label> <a href="#">Apartment Lučica. </a></span><br>
-                                <span>Website by <a href="https://pragmatic.hr/" title="Pragmatic - your digital experience" target="_blank">Pragmatic</a></span>
-                            </p>
-                        </div>
+          <div class="columns block-card">
+            <div class="column hide-mobile">&nbsp;</div>
+            <div class="column is-7">
+              <div class="columns block-reservation">
+                <form
+                  onsubmit="fServePush(); return false;"
+                  class="column reservation-wrap"
+                >
+                  <div class="columns calendar-custom calendar-container">
+                    <div class="column button-check checkin">
+                      <input
+                        type="text"
+                        id="checkin"
+                        autocomplete="off"
+                        class="checkin"
+                        placeholder="CHECK IN"
+                        onkeydown="return false;"
+                        required
+                      />
+                      <i class="icon icon-dots-menu"></i>
                     </div>
-                </div>
-                <div class="column q-1-3-desktop column-right">
-                    <div class="inner">
-                        <h4>Our Address</h4>
-                        <p>
-                            KRALJA TOMISLAVA 24 – MEDIĆI, 21318 MIMICE
-                        </p>
-                        <ul>
-                            <li>Mobile: <a href="tel:+385 1 634167">+385 91 563 4167</a></li>
-                            <li>Phone: <a href="tel:+385 21 867 064">+385 21 867 064</a></li>
-                        </ul>
-                        <p>Email: <a href="mailto:info@apartmanilucica.com">info@apartmanilucica.com</a></p>
-
-                        <div class="bottom on-mobile">
-                            <nav class="social-network">
-                                <<ul>
-                                    <li><a href="https://web.facebook.com/apartmani.lucica/" target="_blank"><i class="icon icon-facebook"></i></a></li>
-                                    <li><a href="https://www.instagram.com/apartmani_lucica_medici/" target="_blank"><i class="icon icon-instagram"></i></a></li>
-                                    <li><a href="https://www.tripadvisor.com/Hotel_Review-g1943769-d15243139-Reviews-Apartmani_Lucica-Mimice_Split_Dalmatia_County_Dalmatia.html" target="_blank"><i class="icon icon-tripadvisor"></i></a></li>
-                                </ul>
-                            </nav>
-                            <p class="copyright">
-                                <span>&copy; <label id="year_copy">2023</label> <a href="#">Apartment Lučica. </a></span><br>
-                                <span>Website by <a href="https://pragmatic.hr/" title="Pragmatic - your digital experience" target="_blank">Pragmatic</a></span>
-
-                            </p>
-                        </div>
-
+                    <div class="column button-check checkout">
+                      <input
+                        type="text"
+                        id="checkout"
+                        autocomplete="off"
+                        class="checkout"
+                        placeholder="CHECK OUT"
+                        onkeydown="return false;"
+                        required
+                      />
+                      <i class="icon icon-dots-menu"></i>
                     </div>
-                    <div class="vs-div2"></div>
-                </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Name*</label>
+                      <div class="qty remove-spacing">
+                        <input
+                          id="name"
+                          placeholder="NAME*"
+                          class="w-full form-text-input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="column button-qty">
+                      <label>Email*</label>
+                      <div class="qty remove-spacing">
+                        <input
+                          id="email"
+                          placeholder="EMAIL*"
+                          class="w-full form-text-input"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Choose apartment</label>
+                      <div class="qty choose">
+                        <select
+                          name="choose_apartment"
+                          id="choose_apartment"
+                          required
+                        >
+                          <option value="" disabled selected>
+                            Choose apartment
+                          </option>
+                          <option value="Apartment Studio 2">
+                            Apartment Studio 2
+                          </option>
+                          <option value="Apartment Studio 2+1">
+                            Apartment Studio 2+1
+                          </option>
+                          <option value="Apartment 2+2">Apartment 2+2</option>
+                          <option value="Apartment 4+2">Apartment 4+2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Adult(s)</label>
+                      <div class="qty">
+                        <i
+                          class="icon icon-minus"
+                          onclick="increment(-1, 'increment_adult')"
+                        ></i>
+                        <input disabled id="increment_adult" value="2" />
+                        <i
+                          class="icon icon-plus"
+                          onclick="increment(1, 'increment_adult')"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="column button-qty">
+                      <label>Children</label>
+                      <div class="qty">
+                        <i
+                          class="icon icon-minus"
+                          onclick="increment(-1, 'increment_child')"
+                        ></i>
+                        <input disabled id="increment_child" value="0" />
+                        <i
+                          class="icon icon-plus"
+                          onclick="increment(1, 'increment_child')"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Message</label>
+                      <div class="qty remove-spacing">
+                        <textarea
+                          rows="3"
+                          id="message"
+                          class="w-full form-text-input"
+                          style="width: -webkit-fill-available"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns button-text">
+                    <div class="column button-wrap q_magnet">
+                      <button
+                        type="submit"
+                        class="reset-button-styling button bg-green"
+                      >
+                        Send inquiry
+                      </button>
+                    </div>
+                    <div class="column button-wrap">
+                      <a
+                        href="apartment-lucica-pricelist.pdf"
+                        class="inline-link q_magnet"
+                        >Download our pricelist</a
+                      >
+                    </div>
+                  </div>
+                </form>
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
+      </section>
 
+      <footer id="footer" class="section footer">
+        <div class="q-container container-inner">
+          <div class="columns">
+            <div class="column q-2-3-desktop column-left">
+              <div class="inner">
+                <div class="top">
+                  <p class="time">
+                    <span id="time__"></span><span id="time__format"></span>
+                  </p>
+                  <p class="temperature"><span class="cc"></span>°C</p>
+                </div>
+                <div class="bottom">
+                  <nav class="social-network">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://web.facebook.com/apartmani.lucica/"
+                          target="_blank"
+                          ><i class="icon icon-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/apartmani_lucica_medici/"
+                          target="_blank"
+                          ><i class="icon icon-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tripadvisor.com/Hotel_Review-g1943769-d15243139-Reviews-Apartmani_Lucica-Mimice_Split_Dalmatia_County_Dalmatia.html"
+                          target="_blank"
+                          ><i class="icon icon-tripadvisor"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p class="copyright">
+                    <span
+                      >&copy; <label id="year_copy">2023</label>
+                      <a href="#">Apartment Lučica. </a></span
+                    ><br />
+                    <span
+                      >Website by
+                      <a
+                        href="https://pragmatic.hr/"
+                        title="Pragmatic - your digital experience"
+                        target="_blank"
+                        >Pragmatic</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column q-1-3-desktop column-right">
+              <div class="inner">
+                <h4>Our Address</h4>
+                <p>KRALJA TOMISLAVA 24 – MEDIĆI, 21318 MIMICE</p>
+                <ul>
+                  <li>
+                    Mobile: <a href="tel:+385 1 634167">+385 91 563 4167</a>
+                  </li>
+                  <li>
+                    Phone: <a href="tel:+385 21 867 064">+385 21 867 064</a>
+                  </li>
+                </ul>
+                <p>
+                  Email:
+                  <a href="mailto:info@apartmanilucica.com"
+                    >info@apartmanilucica.com</a
+                  >
+                </p>
+
+                <div class="bottom on-mobile">
+                  <nav class="social-network">
+                    <
+                    <ul>
+                      <li>
+                        <a
+                          href="https://web.facebook.com/apartmani.lucica/"
+                          target="_blank"
+                          ><i class="icon icon-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/apartmani_lucica_medici/"
+                          target="_blank"
+                          ><i class="icon icon-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tripadvisor.com/Hotel_Review-g1943769-d15243139-Reviews-Apartmani_Lucica-Mimice_Split_Dalmatia_County_Dalmatia.html"
+                          target="_blank"
+                          ><i class="icon icon-tripadvisor"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p class="copyright">
+                    <span
+                      >&copy; <label id="year_copy">2023</label>
+                      <a href="#">Apartment Lučica. </a></span
+                    ><br />
+                    <span
+                      >Website by
+                      <a
+                        href="https://pragmatic.hr/"
+                        title="Pragmatic - your digital experience"
+                        target="_blank"
+                        >Pragmatic</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="vs-div2"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <div class="form-reservation-popup">
-        <div class="popup-container">
-            <div class="form-reservation">
-                <div class="inner">
-                    <div class="columns">
-                        <div class="column">
-                            <span class="section-headline lines-middle text-center">Reservation</span>
-                        </div>
-                    </div>
-                    <div class="columns block-card">
-
-                        <div class="columns block-reservation">
-                            <form onsubmit="fServePush(); return false;" class="column reservation-wrap">
-                                <div class="columns calendar-custom calendar-container-side">
-                                    <div class="column button-check checkin">
-                                        <input type="text" id="checkin-side" autocomplete="off" class="checkin"
-                                               placeholder="CHECK IN" onkeydown="return false;" required> <i
-                                            class="icon icon-dots-menu"></i>
-
-                                        <i class="icon icon-dots-menu"></i>
-                                    </div>
-                                    <div class="column button-check checkout">
-                                        <input type="text" id="checkout-side" autocomplete="off" class="checkout"
-                                               placeholder="CHECK OUT" onkeydown="return false;" required>
-                                        <i class="icon icon-dots-menu"></i>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Adult(s)</label>
-                                        <div class="qty">
-                                            <i class="icon icon-minus" onclick="increment(-1, 'increment_adult_popup')"></i>
-                                            <input disabled id="increment_adult_popup" value="2">
-                                            <i class="icon icon-plus" onclick="increment(1, 'increment_adult_popup')"></i>
-                                        </div>
-                                    </div>
-                                    <div class="column button-qty">
-                                        <label>Children</label>
-                                        <div class="qty">
-                                            <i class="icon icon-minus" onclick="increment(-1, 'increment_child_popup')"></i>
-                                            <input disabled id="increment_child_popup" value="0">
-                                            <i class="icon icon-plus" onclick="increment(1, 'increment_child_popup')"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns btn-increment">
-                                    <div class="column button-qty">
-                                        <label>Message</label>
-                                        <div class="qty remove-spacing">
-                                        <textarea rows="3" id="message" class="w-full form-text-input"
-                                                  style="width: -webkit-fill-available;" placeholder="Message"
-                                                  required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns button-text">
-                                    <div class="column button-wrap">
-                                        <button type="submit" class="reset-button-styling button bg-green">Rates & Availability</button>
-                                    </div>
-                                    <div class="column button-wrap">
-                                        <a href="#" class="button only-text">Explore our Exclusive Deals</a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
+      <div class="popup-container">
+        <div class="form-reservation">
+          <div class="inner">
+            <div class="columns">
+              <div class="column">
+                <span class="section-headline lines-middle text-center"
+                  >Reservation</span
+                >
+              </div>
             </div>
+            <div class="columns block-card">
+              <div class="columns block-reservation">
+                <form
+                  onsubmit="fServePush(); return false;"
+                  class="column reservation-wrap"
+                >
+                  <div class="columns calendar-custom calendar-container-side">
+                    <div class="column button-check checkin">
+                      <input
+                        type="text"
+                        id="checkin-side"
+                        autocomplete="off"
+                        class="checkin"
+                        placeholder="CHECK IN"
+                        onkeydown="return false;"
+                        required
+                      />
+                      <i class="icon icon-dots-menu"></i>
 
+                      <i class="icon icon-dots-menu"></i>
+                    </div>
+                    <div class="column button-check checkout">
+                      <input
+                        type="text"
+                        id="checkout-side"
+                        autocomplete="off"
+                        class="checkout"
+                        placeholder="CHECK OUT"
+                        onkeydown="return false;"
+                        required
+                      />
+                      <i class="icon icon-dots-menu"></i>
+                    </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Adult(s)</label>
+                      <div class="qty">
+                        <i
+                          class="icon icon-minus"
+                          onclick="increment(-1, 'increment_adult_popup')"
+                        ></i>
+                        <input disabled id="increment_adult_popup" value="2" />
+                        <i
+                          class="icon icon-plus"
+                          onclick="increment(1, 'increment_adult_popup')"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="column button-qty">
+                      <label>Children</label>
+                      <div class="qty">
+                        <i
+                          class="icon icon-minus"
+                          onclick="increment(-1, 'increment_child_popup')"
+                        ></i>
+                        <input disabled id="increment_child_popup" value="0" />
+                        <i
+                          class="icon icon-plus"
+                          onclick="increment(1, 'increment_child_popup')"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns btn-increment">
+                    <div class="column button-qty">
+                      <label>Message</label>
+                      <div class="qty remove-spacing">
+                        <textarea
+                          rows="3"
+                          id="message"
+                          class="w-full form-text-input"
+                          style="width: -webkit-fill-available"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns button-text">
+                    <div class="column button-wrap">
+                      <button
+                        type="submit"
+                        class="reset-button-styling button bg-green"
+                      >
+                        Rates & Availability
+                      </button>
+                    </div>
+                    <div class="column button-wrap">
+                      <a href="#" class="button only-text"
+                        >Explore our Exclusive Deals</a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="assets/js/scripts.js"></script>
 
@@ -609,18 +971,19 @@
           </script>
           -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122983318-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122983318-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-122983318-1');
-
+      gtag("config", "UA-122983318-1");
     </script>
-</body>
-
+  </body>
 </html>
