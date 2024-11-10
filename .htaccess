@@ -41,6 +41,7 @@ AddType application/x-font-ttf .ttf
 AddType application/x-font-opentype .otf
 AddType application/x-font-woff .woff
 AddType image/svg+xml .svg
+AddType application/json .json
 
 # Compress compressible fonts
 # only uncomment if you dont have compression turned on already. Otherwise it will cause all other filestypes not to get compressed
