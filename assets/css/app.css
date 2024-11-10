@@ -5259,7 +5259,13 @@ img {
   color: #000; }
   @media screen and (max-width: 540px) {
     .navbar-header {
-      display: none; } }
+      display: none;
+      top: 140px;
+    }
+    .navbar-header .navbar-btn {
+      top: 0 !important;
+    }
+  }
   .navbar-header .navbar-btn {
     position: absolute;
     width: 29px;
