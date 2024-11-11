@@ -5459,8 +5459,13 @@ img {
       position: relative; }
       @media screen and (max-width: 540px) {
         #navContent .main_nav li a {
-          font: 700 14px/2.5 "Open Sans", serif;
-          letter-spacing: 1px; } }
+          font: 700 20px/2.5 "Open Sans", serif;
+          letter-spacing: 1px;
+        }
+        #navContent h5 {
+          font-size: 15px;
+        }
+      }
       #navContent .main_nav li a:before {
         content: "";
         display: block;
@@ -10099,4 +10104,14 @@ textarea {
   color: #FFFFFF;
   font-size: 13px;
   -webkit-text-fill-color: #FFFFFF;
-  opacity: 1; }
+  opacity: 1;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar-header .navbar-btn-label {
+    top: 45px;
+  }
+  .navbar-header.close span {
+    font-size: 13px;
+  }
+}
