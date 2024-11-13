@@ -6399,17 +6399,45 @@ function increment(incrementor, target){
  * Push form reservation value to booking system
  */
 
+const getInputValue = (id) => document.getElementById(id).value.trim();
+
 function fServePush(){
-	var checkin = document.getElementById('checkin').value,
-		checkout = document.getElementById('checkout').value,
-		name = document.getElementById('name').value,
-		email = document.getElementById('email').value,
-		adult = document.getElementById('increment_adult').value,
-        children = document.getElementById('increment_child').value,
-        apartment = document.getElementById('choose_apartment').value,
-        message = document.getElementById('message').value,
-		url = 'https://apartmanilucica.com/mail.php',
-		site = 'APARTMENTLUCICA';
+    const checkin = getInputValue('checkin');
+    const checkout = getInputValue('checkout');
+    const name = getInputValue('name');
+    const email = getInputValue('email');
+    const adult = getInputValue('increment_adult');
+    const children = getInputValue('increment_child');
+    const apartment = getInputValue('choose_apartment');
+    const message = getInputValue('message');
+    const url = 'https://apartmanilucica.com/mail.php';
+
+    if (!name) {
+      alert("Please enter a valid name.")
+      return false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    if (!message) {
+      alert("Please enter a valid message.");
+      return false;
+    }
+
+    const params = new URLSearchParams({
+        check_in_date: checkin,
+        check_out_date: checkout,
+        number_adults: adult,
+        number_children: children,
+        apartment: apartment,
+        name: name,
+        email: email,
+        message: message
+    });
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -6420,16 +6448,18 @@ function fServePush(){
                 generateMessage(0);
         }
     };
-    if(name != "" && email != ""){
-        xhttp.open("GET", url+'?check_in_date=' + checkin + '&check_out_date=' + checkout + '&number_adults=' + adult + '&number_children=' + children+'&apartment='+apartment+'&name='+name+'&email='+email+'&message='+message, true);
-        xhttp.send();
-    }
-	return false;
+
+    xhttp.open("GET", url + '?' + params.toString(), true);
+    xhttp.send();
+
+    return false;
 }
 
 function generateMessage(status){
     if(status){
-        alert("You inquery has been sent. Please check Your email for further actions.");
+        alert("You inquiry has been sent. Please check Your email for further actions.");
+    } else {
+        alert("There was an error sending your inquiry. Please try again later.");
     }
 }
 
